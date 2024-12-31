@@ -1,11 +1,11 @@
 import {useEffect, useState } from 'react';
 import './App.css';
 import Route from './components/Route/Route';
-import { auth } from './utils/firebaseConfig';
+import { auth } from './utils/services/firebaseConfig';
 import { onAuthStateChanged } from 'firebase/auth';
-import userContext from './utils/authenticationContext'
+import userContext from './utils/services/authenticationContext'
 import { Provider } from 'react-redux';
-import store from './utils/store';
+import store from './utils/redux-store/store';
 function App() {
   const [profile , setProfile] = useState({})
   useEffect(()=>{

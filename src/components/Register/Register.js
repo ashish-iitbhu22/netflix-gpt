@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import classes from './Register.module.scss'
-import { emailvalidator, passwordlvalidator } from '../../utils/validator'
+import { emailvalidator, passwordlvalidator } from '../../utils/services/validator'
 import { useNavigate } from 'react-router-dom'
-import { adduser,signInUser,updateUserProfile } from '../../utils/firebaseService'
-import { auth } from '../../utils/firebaseConfig'
+import { adduser,signInUser,updateUserProfile } from '../../utils/services/firebaseService'
+import { auth } from '../../utils/services/firebaseConfig'
 import Header from '../Header/Header'
 
 const Register = () => {

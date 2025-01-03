@@ -40,7 +40,7 @@ const Header = () => {
             </div>
             <button
                 type="submit"
-                className="w-[7rem] bg-red-600 hover:bg-red-700 text-white font-bold p-3 rounded focus:outline-none"
+                className="w-[7rem] bg-red-500 hover:bg-red-600 text-white font-bold p-3 rounded focus:outline-none"
                 onClick={signOut}
             >
                 Sign Out

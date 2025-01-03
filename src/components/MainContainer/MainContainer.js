@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import BgVideo from '../BgVideo/BgVideo'
+import VideoDetailsOverlay from '../VideoDetailsOverlay/VideoDetailsOverlay'
 
 const MainContainer = () => {
     const data = useSelector((state) => {
@@ -12,6 +13,7 @@ const MainContainer = () => {
     return (
         <div>
             <BgVideo videoInfo={movieData} />
+            <VideoDetailsOverlay videoInfo={movieData} />
         </div>
     )
 }

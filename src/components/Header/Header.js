@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser, removeUser } from '../../utils/redux-store/userSlice';
 import { signOutUser } from '../../utils/services/firebaseService'
-import images from '../../asset/constants';
+import images from '../../asset/images';
 
 const Header = () => {
 
@@ -34,7 +34,7 @@ const Header = () => {
         return () => unsubscribe()
     }, [])
     return (
-        <div className='w-[100%] flex justify-between items-center p-4'>
+        <div className={`${classes?.headerComponent} w-[100%] flex justify-between items-center p-4 bg-gradient-to-b from-black`}>
             <div className={classes?.header}>
                 <img src={images?.netflixLogo}></img>
             </div>

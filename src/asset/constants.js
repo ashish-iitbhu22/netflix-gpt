@@ -1,5 +1,5 @@
-const images = {
-    netflixLogo: 'https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/consent/87b6a5c0-0104-4e96-a291-092c11350111/01938dc4-59b3-7bbc-b635-c4131030e85f/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png'
+let authToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYTAwMjFlNDAwZTQxN2I1NTBjYjllNjM3M2VmMDE5NyIsIm5iZiI6MTczNTY0MDU1MS43MDMsInN1YiI6IjY3NzNjNWU3NWYxYzRmYTQ3MzYxOTlhNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.pPv33Beuq7uAdaiyM4yDCzFmor1bOmkf0le0insa1Jo'
+export const getTmdbHeader = {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${authToken}`,
 }
-
-export default images

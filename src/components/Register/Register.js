@@ -82,7 +82,6 @@ const Register = () => {
                 <input
                   type="text"
                   id="name"
-                  autoComplete
                   ref={nameref}
                   placeholder="Enter your name"
                   className="min-w-[20rem] w-full p-3 bg-gray-900 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-red-600"
